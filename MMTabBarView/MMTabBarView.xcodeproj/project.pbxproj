@@ -163,7 +163,7 @@
 		06DB23AA1609F5830071BDA0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06DB23A91609F5830071BDA0 /* Cocoa.framework */; };
 		06DB23B41609F5830071BDA0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 06DB23B21609F5830071BDA0 /* InfoPlist.strings */; };
 		06DB23B81609F5830071BDA0 /* MMTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 06DB23B71609F5830071BDA0 /* MMTabBarView.m */; };
-		A6AA7F841B037F390078CF6E /* MMYosemiteTabStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = A6AA7F821B037F390078CF6E /* MMYosemiteTabStyle.h */; };
+		A6AA7F841B037F390078CF6E /* MMYosemiteTabStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = A6AA7F821B037F390078CF6E /* MMYosemiteTabStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A6AA7F851B037F390078CF6E /* MMYosemiteTabStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = A6AA7F831B037F390078CF6E /* MMYosemiteTabStyle.m */; };
 		A6AA7F8E1B037F4F0078CF6E /* YosemiteTabClose_Front_Pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = A6AA7F861B037F4F0078CF6E /* YosemiteTabClose_Front_Pressed.png */; };
 		A6AA7F8F1B037F4F0078CF6E /* YosemiteTabClose_Front_Pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6AA7F871B037F4F0078CF6E /* YosemiteTabClose_Front_Pressed@2x.png */; };
@@ -699,7 +699,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0634EFD91609FC4C00A6C86A /* MMAttachedTabBarButton.h in Headers */,
-				A6AA7F841B037F390078CF6E /* MMYosemiteTabStyle.h in Headers */,
 				0634F0031609FC7F00A6C86A /* NSView+MMTabBarViewExtensions.h in Headers */,
 				0634F0051609FC7F00A6C86A /* MMAttachedTabBarButtonCell.h in Headers */,
 				0634F0071609FC7F00A6C86A /* MMOverflowPopUpButton.h in Headers */,
@@ -731,6 +730,7 @@
 				06789DBE161337770080FCFE /* NSBezierPath+MMTabBarViewExtensions.h in Headers */,
 				066375A216171EFC004A1128 /* MMTabBarItem.h in Headers */,
 				066375A516172608004A1128 /* NSTabViewItem+MMTabBarViewExtensions.h in Headers */,
+				A6AA7F841B037F390078CF6E /* MMYosemiteTabStyle.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

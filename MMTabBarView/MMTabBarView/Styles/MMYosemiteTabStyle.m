@@ -211,7 +211,7 @@
 
     NSWindow *window = [tabBarView window];
     NSToolbar *toolbar = [window toolbar];
-    if (toolbar && [toolbar isVisible])
+//    if (toolbar && [toolbar isVisible])
         return;
 
     NSRect aRect = [button frame];
@@ -247,14 +247,14 @@
 {
     MMTabBarView *tabBarView = [controlView enclosingTabBarView];
     MMAttachedTabBarButton *button = (MMAttachedTabBarButton *)controlView;
-    NSWindow *window = [controlView window];
-    NSToolbar *toolbar = [window toolbar];
+//    NSWindow *window = [controlView window];
+//    NSToolbar *toolbar = [window toolbar];
     
     BOOL overflowMode = [button isOverflowButton];
     if ([button isSliding])
         overflowMode = NO;
         
-    if (toolbar && [toolbar isVisible]) {
+//    if (toolbar && [toolbar isVisible]) {
 
         NSRect aRect = NSZeroRect;
         if (overflowMode) {
@@ -272,21 +272,21 @@
             [self _drawCardBezelInRect:aRect withCapMask:MMBezierShapeAllCaps|MMBezierShapeFlippedVertically usingStatesOfAttachedButton:button ofTabBarView:tabBarView];
         }
      
-    } else {
-    
-        NSRect aRect = NSZeroRect;
-        if (overflowMode) {
-            aRect = NSMakeRect(frame.origin.x, frame.origin.y, frame.size.width, frame.size.height);
-        } else {
-            aRect = NSMakeRect(frame.origin.x, frame.origin.y, frame.size.width, frame.size.height);
-        }
-
-        if (overflowMode) {
-            [self _drawBoxBezelInRect:aRect withCapMask:MMBezierShapeLeftCap usingStatesOfAttachedButton:button ofTabBarView:tabBarView];
-        } else {
-            [self _drawBoxBezelInRect:aRect withCapMask:MMBezierShapeAllCaps usingStatesOfAttachedButton:button ofTabBarView:tabBarView];
-        }
-    }
+//    } else {
+//    
+//        NSRect aRect = NSZeroRect;
+//        if (overflowMode) {
+//            aRect = NSMakeRect(frame.origin.x, frame.origin.y, frame.size.width, frame.size.height);
+//        } else {
+//            aRect = NSMakeRect(frame.origin.x, frame.origin.y, frame.size.width, frame.size.height);
+//        }
+//
+//        if (overflowMode) {
+//            [self _drawBoxBezelInRect:aRect withCapMask:MMBezierShapeLeftCap usingStatesOfAttachedButton:button ofTabBarView:tabBarView];
+//        } else {
+//            [self _drawBoxBezelInRect:aRect withCapMask:MMBezierShapeAllCaps usingStatesOfAttachedButton:button ofTabBarView:tabBarView];
+//        }
+//    }
 }
 
 -(void)drawBezelOfOverflowButton:(MMOverflowPopUpButton *)overflowButton ofTabBarView:(MMTabBarView *)tabBarView inRect:(NSRect)rect {

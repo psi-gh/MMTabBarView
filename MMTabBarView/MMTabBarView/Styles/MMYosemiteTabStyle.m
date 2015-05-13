@@ -199,7 +199,7 @@
         [gradient release];
     }
 
-    [[NSColor colorWithCalibratedWhite:0.576 alpha:1.0] set];
+    [[NSColor colorWithCalibratedRed:0.642 green:0.633 blue:0.642 alpha:1.000] set];
     [NSBezierPath strokeLineFromPoint:NSMakePoint(NSMinX(rect), NSMinY(rect) + 0.5)
                               toPoint:NSMakePoint(NSMaxX(rect), NSMinY(rect) + 0.5)];
     
